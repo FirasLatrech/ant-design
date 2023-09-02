@@ -15,10 +15,10 @@ const App: React.FC = () => {
       onFinish={onFinish}
     >
       <Form.Item
-        name="username"
-        rules={[{ required: true, message: 'Please input your Username!' }]}
+        name="Email"
+        rules={[{ required: true, message: 'Please input your Email!' }]}
       >
-        <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" />
+        <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Email" type="email" />
       </Form.Item>
       <Form.Item
         name="password"
